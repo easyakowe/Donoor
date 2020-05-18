@@ -1,0 +1,127 @@
+html {
+    height: 100%;
+  }
+  body {
+    min-height: 100%;
+    margin: 0;
+  }
+
+* {
+    box-sizing: border-box;
+  }
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #8B497A;
+    color: rgb(255, 255, 255);
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    /* background-color: rzgb(161, 6, 6);
+    color: white; */
+    background-color: #8B497A;
+    color: rgb(255, 255, 255);
+  }
+
+
+  /* OTHER STYLING------------------------------------------------------------------------------------------- */
+
+
+
+
+  
+  /* Create two equal columns that floats next to each other */
+  .column-main {
+    float: left;
+    width: 60%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-image: url("6.jpg");
+
+    min-height: 100vh;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    box-shadow: 5px 3px #888888;
+  }
+
+  .column-aside {
+    float: right;
+    width: 40%;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 100%;
+  }
+
+  .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  input {
+      font-family: Arial, Helvetica, sans-serif;
+      height: 35px;
+      width: 100%;
+      border-radius: 5px;
+      border-top: none;
+      border-left: none;
+      padding-left: 10px;
+  }
+
+  select {
+    height: 35px;
+    width: 100%;
+    border-radius: 5px;
+    border-top: none;
+    border-left: none;
+    padding-left: 10px;
+  }
+
+  label {
+      color: #333;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  }
